@@ -8,7 +8,7 @@ import Interests from '../components/Interests';
 
 export default function Home() {
   return (
-    <div class="w-[1512px] h-[5148px] relative bg-black">
+    <div className="relative bg-black">
       <Header />
       <Hero />
       <Experience />
