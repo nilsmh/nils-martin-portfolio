@@ -39,10 +39,10 @@ export default function Hero() {
               majoring in Geomatics🌍
             </div>
             <div className="flex flex-col gap-5 pt-[50px]">
-              <button className="w-[130px] bg-teal-300 rounded-3xl text-center text-black text-[18px] font-bold hover:bg-transparent hover:text-teal-300">
+              <button className="w-[130px] bg-teal-300 pointer-events-auto rounded-3xl text-center text-black text-[18px] font-bold hover:bg-transparent hover:text-teal-300">
                 Let's talk
               </button>
-              <button className="w-[130px]  rounded-3xl text-center border border-teal-300 text-white text-[18px] font-bold  hover:text-teal-300 hover:border-transparent">
+              <button className="w-[130px] pointer-events-auto rounded-3xl text-center border border-teal-300 text-white text-[18px] font-bold  hover:text-teal-300 hover:border-transparent">
                 Download CV
               </button>
             </div>
