@@ -18,7 +18,7 @@ export default function Hero() {
       </div>
       <div className="h-screen flex pointer-events-none">
         <div className="flex-1 flex z-10">
-          <div className="w-26 h-screen pt-[60px] flex flex-col gap-10 items-center shrink-0">
+          <div className="w-26 h-screen pt-[60px] hidden sm:flex flex-col gap-10 items-center shrink-0">
             <a href="https://github.com/nilsmh">
               {' '}
               <img className="h-auto w-[35px]" src={github} alt="Github" />
@@ -38,7 +38,7 @@ export default function Hero() {
               I am a student at NTNU Trondheim, studying Engineering and ICT,
               majoring in Geomatics🌍
             </div>
-            <div className="flex flex-col gap-5 pt-[50px]">
+            <div className="hidden sm:flex flex-col gap-5 pt-[50px]">
               <button className="w-[130px] bg-teal-300 pointer-events-auto rounded-3xl text-center text-black text-[18px] font-bold hover:bg-transparent hover:text-teal-300">
                 Let's talk
               </button>
@@ -48,7 +48,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex-1 pl-50 pt-[50px] z-10">
+        <div className="hidden sm:flex flex-1 pl-50 pt-[50px] z-10">
           <img
             className="w-[380px] h-[380px] rounded-full object-cover object-top border-2 border-teal-300 shadow-teal-950 shadow-xl"
             src={profilepic}
