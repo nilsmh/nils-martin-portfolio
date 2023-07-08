@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import { Bars3Icon } from '@heroicons/react/20/solid';
 
-export default function Header() {
+export default function Header({ experienceRef }) {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const scrollToSection = (e) => {
+    e.preventDefault();
+    experienceRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   const handleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -22,7 +27,10 @@ export default function Header() {
         </div>
       </div>
       <div className="flex-1 hidden md:flex flex-row lg:gap-7 md:gap-8 md:justify-end pr-16 xl:pr-40 ">
-        <div className="text-white md:text-[15px] lg:text-[18px] font-semibold hover:text-teal-300 hover:cursor-pointer">
+        <div
+          onClick={scrollToSection}
+          className="text-white md:text-[15px] lg:text-[18px] font-semibold hover:text-teal-300 hover:cursor-pointer"
+        >
           Experience
         </div>
         <div className="text-white md:text-[15px] lg:text-[18px] font-semibold hover:text-teal-300  hover:cursor-pointer">

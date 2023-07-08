@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Experience from '../components/Experience';
@@ -7,11 +7,12 @@ import Technology from '../components/Technology';
 import Interests from '../components/Interests';
 
 export default function Home() {
+  const experienceRef = useRef(null);
   return (
     <div className="relative bg-black w-full">
-      <Header />
+      <Header experienceRef={experienceRef} />
       <Hero />
-      <Experience />
+      <Experience ref={experienceRef} />
       <Projects />
       <Technology />
       <Interests />

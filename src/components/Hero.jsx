@@ -8,7 +8,7 @@ import Earth from './earth';
 
 export default function Hero() {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full relative">
       <div className="w-full h-full absolute ">
         <Canvas>
           <Suspense fallback={null}>

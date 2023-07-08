@@ -9,6 +9,7 @@ module.exports = {
       },
       screens: {
         xxsm: '400px',
+        additional_helper_breakpoint: '428px',
         xsm: '640px',
         sm: '790px',
         md: '894px',
