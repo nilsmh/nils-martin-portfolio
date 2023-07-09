@@ -1,12 +1,18 @@
 import { useState } from 'react';
 import { Bars3Icon } from '@heroicons/react/20/solid';
 
-export default function Header({ experienceRef }) {
+export default function Header({ experienceRef, projectsRef }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollToSection = (e) => {
     e.preventDefault();
-    experienceRef.current.scrollIntoView({ behavior: 'smooth' });
+    switch (e.target.innerHTML) {
+      case 'Experience':
+        experienceRef.current.scrollIntoView({ behavior: 'smooth' });
+        break;
+      case 'Projects':
+        projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const handleMenu = () => {
@@ -33,7 +39,10 @@ export default function Header({ experienceRef }) {
         >
           Experience
         </div>
-        <div className="text-white md:text-[15px] lg:text-[18px] font-semibold hover:text-teal-300  hover:cursor-pointer">
+        <div
+          onClick={scrollToSection}
+          className="text-white md:text-[15px] lg:text-[18px] font-semibold hover:text-teal-300  hover:cursor-pointer"
+        >
           Projects
         </div>
         <div className="text-white md:text-[15px] lg:text-[18px] font-semibold hover:text-teal-300  hover:cursor-pointer">
