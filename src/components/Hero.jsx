@@ -29,22 +29,22 @@ export default function Hero() {
             </a>
             <img className="h-auto w-[35px]" src={gmail} alt="Gmail" />
           </div>
-          <div className="w-full pl-0 xsm:pl-12 lg:pl-26 flex flex-col items-center xsm:items-start ">
-            <div className="text-center xsm:text-start pt-[50px] text-white text-[25px] xxsm:text-[30px] font-bold xsm:w-[300px]">
+          <div className="w-full pl-0 xsm:pl-12 lg:pl-26 flex flex-col items-center xsm:items-start pointer-events-auto">
+            <div className="text-center xsm:text-start pt-[50px] text-white text-[25px] xxsm:text-[30px] font-bold xsm:w-[300px] pointer-events-auto">
               Hi, <span className="text-teal-300">I´m</span> <br /> Nils-Martin{' '}
               <span className="text-teal-300">Hillesund</span>
             </div>
-            <div className="text-center xsm:text-start pt-[20px] text-white text-[15px] xxsm:text-[18px] font-regular w-[300px] xxsm:w-[400px]">
+            <div className="text-center xsm:text-start pt-[20px] text-white text-[15px] xxsm:text-[18px] font-regular w-[300px] xxsm:w-[400px] pointer-events-auto">
               I am a student at NTNU Trondheim, studying Engineering and ICT,
               majoring in Geomatics🌍
             </div>
-            <div className="sm:hidden pt-[20px] z-10 w-[280px] h-[280px] shrink-1">
+            <div className="sm:hidden pt-[20px] z-10 w-[280px] h-[280px] shrink-1 pointer-events-auto">
               <img
                 className="w-[280px] h-[280px] lg:w-[380px] lg:h-[380px] rounded-full object-cover object-top border-2 border-teal-300 shadow-teal-950 shadow-xl"
                 src={profilepic}
               />
             </div>
-            <div className="flex xsm:flex-col justify-around gap-5 pt-[50px]">
+            <div className="flex xsm:flex-col justify-around gap-5 pt-[50px] pointer-events-auto">
               <button className="w-[130px] bg-teal-300 pointer-events-auto rounded-3xl text-center text-black text-[18px] font-bold hover:bg-transparent hover:text-teal-300">
                 Let's talk
               </button>
@@ -52,7 +52,7 @@ export default function Hero() {
                 Download CV
               </button>
             </div>
-            <div className="pt-[30px] flex xsm:hidden flex-row gap-10 items-center shrink-0">
+            <div className="pt-[30px] flex xsm:hidden flex-row gap-10 items-center shrink-0 pointer-events-auto">
               <a href="https://github.com/nilsmh">
                 {' '}
                 <img className="h-auto w-[35px]" src={github} alt="Github" />
@@ -71,7 +71,7 @@ export default function Hero() {
         </div>
         <div className="hidden sm:flex flex-1 xsm:pl-2 md:pl-10 lg:pl-42 xl:pl-48 pt-[50px] z-10 md:mr-18">
           <img
-            className="w-[150px] h-[150px] xsm:w-[200px] xsm:h-[200px] md:w-[280px] md:h-[280px] lg:w-[350px] lg:h-[350px] rounded-full object-cover object-top border-2 border-teal-300 shadow-teal-950 shadow-xl"
+            className="w-[150px] h-[150px] xsm:w-[200px] xsm:h-[200px] md:w-[280px] md:h-[280px] lg:w-[350px] lg:h-[350px] rounded-full object-cover object-top border-2 border-teal-300 shadow-teal-950 shadow-xl pointer-events-auto"
             src={profilepic}
           />
         </div>

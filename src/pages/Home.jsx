@@ -8,12 +8,13 @@ import Interests from '../components/Interests';
 
 export default function Home() {
   const experienceRef = useRef(null);
+  const projectsRef = useRef(null);
   return (
     <div className="relative bg-black w-full">
-      <Header experienceRef={experienceRef} />
+      <Header experienceRef={experienceRef} projectsRef={projectsRef} />
       <Hero />
       <Experience ref={experienceRef} />
-      <Projects />
+      <Projects ref={projectsRef} />
       <Technology />
       <Interests />
     </div>
